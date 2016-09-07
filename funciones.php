@@ -42,7 +42,7 @@ $elev = (int)$elev;
 
 
 //si esta vacia, le asigna ceros
-
+/* 	ESTO ERA LO QUE GENERABA EL ERROR
 for($lIncrementoX = 1; $lIncrementoX <= 3; $lIncrementoX++)
 {
 	for ($lIncrementoY = 1; $lIncrementoY <= 3 ; $lIncrementoY++) 
@@ -54,6 +54,7 @@ for($lIncrementoX = 1; $lIncrementoX <= 3; $lIncrementoX++)
 		}
 	}
 }
+*/
 
 //Determinante
 
@@ -83,7 +84,7 @@ switch ($opcion)
 	case '2': //Matriz Inversa
 
 		$determinante = determinante($matrizA);
-		if ($determinante = 0) 
+		if ($determinante != 0) 
 		{
 
 			$matrizC[1][1] =  1*( ( $matrizA[2][2]*$matrizA[3][3] ) - ( $matrizA[2][3]*$matrizA[3][2] ) );
